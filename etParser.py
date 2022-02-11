@@ -39,8 +39,8 @@ class ETParser:
                         self._ns = 0
                         self._tags_stack = None 
                     else:
-                        del self._tags_stack[-1]
-            element.clear()
+                        del self._tags_stack[-1]            
+                element.clear()
 
         print("===> shutdown event is being set in et parser...")
         self._shutdown_event.set()
